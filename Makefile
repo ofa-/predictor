@@ -5,6 +5,9 @@ setup:
 	sudo apt-get install -y language-pack-fr
 	#mkvirtualenv --python=`which python3` py3
 	pip3 install -r requirements.txt
+	:
+	python3 --version
+	pip3 freeze
 
 check:
 	./predictor.py --help
