@@ -1,0 +1,19 @@
+name: Publish site
+
+on:
+  push:
+    tags:
+      - '*'
+  schedule:
+      - cron: "0 18 * * *"
+
+jobs:
+  publish-site:
+    runs-on: ubuntu-18.04
+
+    steps:
+      - uses: actions/checkout@v1
+
+      - run: make setup xkcd.ttf help.fr
+
+      - run: make fetch curfew
