@@ -428,7 +428,7 @@ def pretty_time(val):
 def init():
     from os import path, system
     if not path.exists("data.csv"):
-        system("fetch.sh")
+        system("./fetch.sh")
 
     global dep
     dep = pd.read_csv("dep.csv", sep="\t")
