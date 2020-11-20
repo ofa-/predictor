@@ -3,7 +3,7 @@ all:
 setup:
 	sudo apt-get install -y python3 #virtualenvwrapper
 	#mkvirtualenv --python=`which python3` py3
-	pip install -r requirements.txt
+	pip3 install -r requirements.txt
 
 
 FONT = Yahfie/Yahfie-Heavy.ttf
