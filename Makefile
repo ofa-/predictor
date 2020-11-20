@@ -6,6 +6,14 @@ setup:
 	#mkvirtualenv --python=`which python3` py3
 	pip3 install -r requirements.txt
 
+check:
+	./predictor.py --help
+	:
+	tail -1 data.csv
+	:
+	./predictor.py --noshow 38
+	ls -lh 38.png
+
 
 FONT = Yahfie/Yahfie-Heavy.ttf
 ZIPFILE = Yahfie-Normal.font.zip

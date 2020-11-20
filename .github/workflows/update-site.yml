@@ -16,4 +16,4 @@ jobs:
 
       - run: make setup xkcd.ttf help.fr
 
-      - run: make fetch curfew
+      - run: make check fetch curfew
