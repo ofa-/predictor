@@ -1,8 +1,8 @@
 all:
 
 setup:
-	sudo apt-get install -y python3 virtualenvwrapper
-	mkvirtualenv --python=`which python3` py3
+	sudo apt-get install -y python3 #virtualenvwrapper
+	#mkvirtualenv --python=`which python3` py3
 	pip install -r requirements.txt
 
 
@@ -18,7 +18,7 @@ xkcd.ttf: fontname.py ~/.fonts
 	rm -f $(ZIPFILE)
 
 fontname.py:
-	pip install fonttools
+	pip3 install fonttools
 	wget https://github.com/chrissimpkins/fontname.py/raw/master/fontname.py
 	chmod +x fontname.py
 
