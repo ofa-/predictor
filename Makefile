@@ -1,4 +1,10 @@
-all: xkcd.ttf clean
+all:
+
+setup:
+	sudo apt-get install -y python3 virtualenvwrapper
+	mkvirtualenv --python=`which python3` py3
+	pip install -r requirements.txt
+
 
 FONT = Yahfie/Yahfie-Heavy.ttf
 ZIPFILE = Yahfie-Normal.font.zip
