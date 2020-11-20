@@ -2,6 +2,7 @@ all:
 
 setup:
 	sudo apt-get install -y python3 #virtualenvwrapper
+	sudo apt-get install -y language-pack-fr
 	#mkvirtualenv --python=`which python3` py3
 	pip3 install -r requirements.txt
 
